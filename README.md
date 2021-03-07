@@ -3,7 +3,7 @@
 
 # Setup
  - git clone https://github.com/vinchi777/demoapi
- - docker-compose build
+ - cd && docker-compose build
  - docker-compose up
  - docker-compose run rails_api rails db:create
  - docker-compose run rails_api rails db:migrate
