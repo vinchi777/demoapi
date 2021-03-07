@@ -1,24 +1,13 @@
-# README
+# Requirements
+ - Docker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Setup
+ - git clone https://github.com/vinchi777/demoapi
+ - docker-compose build
+ - docker-compose up
+ - docker-compose run rails_api rails db:create
+ - docker-compose run rails_api rails db:migrate
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Creating models/tables
+ - docker-compose run rails_api rails g model User
+ - docker-compose run rails_api rails db:migrate
