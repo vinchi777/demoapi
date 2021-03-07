@@ -11,3 +11,6 @@
 # Creating models/tables
  - docker-compose run rails_api rails g model User
  - docker-compose run rails_api rails db:migrate
+
+# Inspect/debug in console
+ - docker-compose run rails_api rails console
