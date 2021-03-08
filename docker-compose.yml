@@ -23,6 +23,8 @@ services:
     container_name: demoapi_postgres
     volumes:
       - ./data/db/postgresql:/var/lib/postgresql/data
+      - bundler_gems:/usr/local/bundle/
+
     ports:
       - "5432:5432"
     environment:
@@ -35,3 +37,5 @@ services:
 networks:
   demoapinet:
 
+volumes:
+  bundler_gems:
