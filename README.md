@@ -7,7 +7,6 @@
  - `docker-compose up`
  - `docker-compose run rails_api rails db:create`
  - `docker-compose run rails_api rails db:migrate`
- - visit localhost:3000
 
 # If running on Linux
  - `cd data/db/`
@@ -19,3 +18,23 @@
 
 # Inspect/debug in console
  - `docker-compose run rails_api rails console`
+
+# Endpoints
+
+### List notes
+ ```
+   GET localhost:3000/notes
+ ```
+ 
+### Create note
+ ```
+   POST localhost
+   {
+     data: {
+       attributes: {
+          subject: "Test",
+          body: "Test,
+        }
+     }
+   }
+```
