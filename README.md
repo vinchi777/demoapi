@@ -7,6 +7,7 @@
  - `docker-compose up`
  - `docker-compose run rails_api rails db:create`
  - `docker-compose run rails_api rails db:migrate`
+ - visit localhost:3000
 
 # If running on Linux
  - `cd data/db/`
