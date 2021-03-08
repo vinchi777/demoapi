@@ -28,7 +28,7 @@
  
 ### Create note
  ```
-   POST localhost
+   POST localhost:3000/notes
    {
      data: {
        attributes: {
